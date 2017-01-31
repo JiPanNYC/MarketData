@@ -1,0 +1,72 @@
+
+.frame {
+  margin-top: 14px;
+  line-height: 28px;
+  overflow: hidden;
+  position: relative;
+  height: 73px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+.frame ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height:106px;
+}
+
+.frame ul li{
+  width: 200px;
+  margin: 0 0 0 0;
+  padding: 0;
+  background: #ffffff;
+  color: #ddd;
+  text-align: center;
+  cursor: pointer;
+  border-left: 1px solid #dcdcdc;
+  position: relative;
+  display:inline-block;
+}
+
+.frame ul li:first-child{
+  border-left:none;
+}
+
+.frame ul li.active {
+  color: #fff;
+  background: #ffffff;
+}
+
+.frame ul li span {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 5%;
+  font-size: 16px;
+}
+
+.frame ul li span.Change.up, .frame ul li span.ChangeinPercent.up, .frame ul li span.Name.up, .frame ul li span.LastTradePriceOnly.up {
+  color: rgb(197, 12, 17); 
+}
+
+.frame ul li span.Change.down, .frame ul li span.ChangeinPercent.down, .frame ul li span.Name.down, .frame ul li span.LastTradePriceOnly.down {
+  color: rgb(83, 178, 96); 
+}
+
+.frame ul li span.Change, .frame ul li span.ChangeinPercent {
+  display: inline-block;
+}
+
+.frame ul li span.Change {
+  margin-right: 13px;
+}
+
+.frame::-webkit-scrollbar {
+   display: none; 
+}
+
